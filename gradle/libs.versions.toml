@@ -45,7 +45,7 @@ androidxMaterial3 = { group = "androidx.compose.material3", name = "material3" }
 datastore = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "dataStore" }
 constraintCompose = { group = "androidx.constraintlayout", name = "constraintlayout-compose", version.ref = "constraintCompose" }
 navigationCompose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "compose" }
-materialCompose = { group = "androidx.compose.material", name = "material-icons-extended" }
+materialIconsExtendedCompose = { group = "androidx.compose.material", name = "material-icons-extended" }
 roomRuntime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 roomKtx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
@@ -78,6 +78,7 @@ daggerHiltAndroid = { id = "com.google.dagger.hilt.android", version.ref = "hilt
 hiltAndroid = { id = "com.google.dagger.hilt.android" }
 ksp = { id = "com.google.devtools.ksp" }
 kspRoot = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 
 [bundles]
 retrofit = ["retrofitCore", "kotlinxSerializationConverter", "serializationJson", "okhttp", "okhttpInterceptor"]

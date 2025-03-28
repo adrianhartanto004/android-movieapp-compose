@@ -4,11 +4,12 @@ plugins {
     alias(libs.plugins.kotlinCompose)
     alias(libs.plugins.hiltAndroid)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.kotlinSerialization)
 }
 
 android {
     namespace = "com.adrian.movieappcompose"
-    compileSdk = 36
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.adrian.movieappcompose"
@@ -62,7 +63,7 @@ dependencies {
     implementation(libs.datastore)
     implementation(libs.constraintCompose)
     implementation(libs.navigationCompose)
-    implementation(libs.materialCompose)
+    implementation(libs.materialIconsExtendedCompose)
     implementation(libs.bundles.room)
     ksp(libs.roomCompiler)
     implementation(libs.bundles.retrofit)
@@ -76,6 +77,6 @@ dependencies {
 
     debugImplementation(libs.leakCanary)
 
-    debugImplementation(libs.chuckDebug)
-    releaseImplementation(libs.chuckRelease)
+//    debugImplementation(libs.chuckDebug)
+//    releaseImplementation(libs.chuckRelease)
 }
