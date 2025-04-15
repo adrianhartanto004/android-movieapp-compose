@@ -16,8 +16,12 @@
 default_platform(:android)
 
 platform :android do
-  desc "Run unit tests"
-  lane :run_tests do
-    gradle(task: "testDebugUnitTest")
+  desc "Run all unit tests"
+  lane :run_unit_tests do
+    UI.message("Running unit tests for Debug variant 🚀")
+    gradle(
+      task: "testDebugUnitTest",
+      flags: "--parallel --daemon"
+    )
   end
 end
