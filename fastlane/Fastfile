@@ -24,4 +24,9 @@ platform :android do
       flags: "--parallel --daemon"
     )
   end
+
+  desc "Build APK for Debug"
+  lane :build_apk_debug do
+    gradle(task: "clean assembleDebug")
+  end  
 end
