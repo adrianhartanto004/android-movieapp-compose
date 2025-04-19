@@ -9,8 +9,8 @@ on:
       - "main"
 
 jobs:
-  test:
-    name: Run Unit Tests
+  build-push:
+    name: Build, Test, and Deploy artifact
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
